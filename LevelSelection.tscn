@@ -1,0 +1,736 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://back_button.gd" type="Script" id=1]
+[ext_resource path="res://LevelSelection.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -206.0
+margin_top = 100.0
+margin_right = 206.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="back_button" type="Button" parent="VBoxContainer"]
+margin_right = 412.0
+margin_bottom = 20.0
+text = "Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 412.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 0, 350 )
+size_flags_horizontal = 3
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+margin_right = 400.0
+margin_bottom = 806.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelSelection2" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection2/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection2/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection3" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 400.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection3/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection3/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection4" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 400.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection4/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection4/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection5" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 400.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection5/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection5/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection6" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 400.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection6/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection6/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection7" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 270.0
+margin_right = 400.0
+margin_bottom = 320.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection7/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection7/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection8" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 324.0
+margin_right = 400.0
+margin_bottom = 374.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection8/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection8/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection9" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 400.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection9/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection9/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection10" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 432.0
+margin_right = 400.0
+margin_bottom = 482.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection10"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection10/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection10/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection11" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 486.0
+margin_right = 400.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection11"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection11/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection11/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection12" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 540.0
+margin_right = 400.0
+margin_bottom = 590.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection12"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection12/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection12/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection13" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 594.0
+margin_right = 400.0
+margin_bottom = 644.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection13"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection13/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection13/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection14" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 648.0
+margin_right = 400.0
+margin_bottom = 698.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection14"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection14/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection14/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection15" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 702.0
+margin_right = 400.0
+margin_bottom = 752.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection15"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection15/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection15/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+
+[node name="LevelSelection16" type="ColorRect" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 756.0
+margin_right = 400.0
+margin_bottom = 806.0
+rect_min_size = Vector2( 400, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.352941, 0.352941, 0.352941, 1 )
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection16"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection16/GridContainer"]
+margin_right = 188.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_text = "Level 2"
+text = "Level 2"
+fit_content_height = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/VBoxContainer/LevelSelection16/GridContainer"]
+margin_left = 192.0
+margin_right = 380.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[right]99:99:99"
+text = "99:99:99"
+fit_content_height = true
+[connection signal="pressed" from="VBoxContainer/back_button" to="VBoxContainer/back_button" method="_on_back_button_pressed"]

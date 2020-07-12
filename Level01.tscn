@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://PlayerSpawn.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Goal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Level.gd" type="Script" id=4]
+[ext_resource path="res://spikes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GrappleTarget.tscn" type="PackedScene" id=6]
+[ext_resource path="res://DrawPolygon.gd" type="Script" id=8]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 4 )
+next_scene = "res://Level03.tscn"
+
+[node name="PlayerSpawn" parent="." instance=ExtResource( 1 )]
+position = Vector2( 19, 14 )
+
+[node name="world" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="LeftTarget" parent="world" instance=ExtResource( 6 )]
+position = Vector2( 48, 30 )
+
+[node name="RightTarget" parent="world" instance=ExtResource( 6 )]
+position = Vector2( 90, 89 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world"]
+polygon = PoolVector2Array( 4, 150, 0, 150, 0, 0, 250, 0, 250, 150, 4, 150, 4, 146, 246, 146, 246, 4, 4, 4, 4, 87.0331, 88, 87, 88, 91, 4, 91, 4, 136, 21, 136, 21, 146, 4, 146 )
+script = ExtResource( 8 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 125, 75 )
+current = true
+smoothing_enabled = true
+
+[node name="Goal" parent="." instance=ExtResource( 2 )]
+position = Vector2( 10, 130 )
+
+[node name="Spikes" parent="." instance=ExtResource( 5 )]
+position = Vector2( 11, 87 )
+
+[node name="Spikes3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 39, 87 )
+
+[node name="Spikes4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 53, 87 )
+
+[node name="Spikes5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 67, 87 )
+
+[node name="Spikes6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 81, 87 )
+
+[node name="Spikes2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 25, 87 )
+
+[node name="Spikes7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 28, 146 )
+
+[node name="Spikes8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 56, 146 )
+
+[node name="Spikes9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 70, 146 )
+
+[node name="Spikes10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 84, 146 )
+
+[node name="Spikes11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 98, 146 )
+
+[node name="Spikes12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 42, 146 )
+
+[node name="Spikes13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 112, 146 )
+
+[node name="Spikes14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 140, 146 )
+
+[node name="Spikes15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 154, 146 )
+
+[node name="Spikes16" parent="." instance=ExtResource( 5 )]
+position = Vector2( 168, 146 )
+
+[node name="Spikes17" parent="." instance=ExtResource( 5 )]
+position = Vector2( 182, 146 )
+
+[node name="Spikes18" parent="." instance=ExtResource( 5 )]
+position = Vector2( 126, 146 )
+
+[node name="Spikes19" parent="." instance=ExtResource( 5 )]
+position = Vector2( 196, 146 )
+
+[node name="Spikes20" parent="." instance=ExtResource( 5 )]
+position = Vector2( 224, 146 )
+
+[node name="Spikes21" parent="." instance=ExtResource( 5 )]
+position = Vector2( 238, 146 )
+
+[node name="Spikes24" parent="." instance=ExtResource( 5 )]
+position = Vector2( 210, 146 )
