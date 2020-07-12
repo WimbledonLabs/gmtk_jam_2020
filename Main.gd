@@ -43,6 +43,7 @@ func attempt_grapple():
 
 	# The parent of a target is always the physics object to attach to
 	rope.attach(self, target.get_parent(), target.global_position)
+	$hook_sound.play()
 
 	grappling = true
 
@@ -50,6 +51,7 @@ func attempt_grapple():
 func release_grapple():
 	assert(rope)
 	rope.detach()
+	$release_sound.play()
 
 	grappling = false
 

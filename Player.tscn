@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://bot0.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://bot2.png" type="Texture" id=4]
 [ext_resource path="res://bot3.png" type="Texture" id=5]
 [ext_resource path="res://NonRotatingSprite.gd" type="Script" id=6]
+[ext_resource path="res://hook_1.wav" type="AudioStream" id=7]
+[ext_resource path="res://release_1.wav" type="AudioStream" id=8]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 2.25456
@@ -66,3 +68,9 @@ script = ExtResource( 6 )
 
 [node name="player" type="AnimationPlayer" parent="."]
 anims/death = SubResource( 3 )
+
+[node name="hook_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+
+[node name="release_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
