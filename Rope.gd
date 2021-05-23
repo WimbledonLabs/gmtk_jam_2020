@@ -4,47 +4,24 @@ var nodes_to_clean_up = []
 
 var rope_end
 var rope_body_start
+var grapple_distance
 
 func attach(body_a, body_b, attach_position):
 	rope_body_start = body_a
 	rope_end = attach_position
-	if nodes_to_clean_up:
-		detach()
 
-	var distance = (body_a.position - attach_position).length()
-	var segment_count = 4
-	var segment_length = distance / segment_count
+	grapple_distance = (rope_end - rope_body_start.global_position).length()
 
-	var start_position = attach_position
-	var segment_vector = (body_a.position - attach_position).normalized() * segment_length
+func _physics_process(delta):
+	if rope_body_start:
+		var pull_vector = rope_end - rope_body_start.global_position
+		if pull_vector.length() > grapple_distance:
+			var linear_velocity_impulse_factor = -rope_body_start.get_linear_velocity().dot(pull_vector.normalized())
+			linear_velocity_impulse_factor = clamp(linear_velocity_impulse_factor, 0.0, 500.0)
+			var distance_from_ideal_impulse_factor = pull_vector.length() - grapple_distance
 
-	var segments = []
-
-	var pin_previous = body_b
-	for segment_num in range(segment_count):
-		var link = load("res://RopeLink.tscn").instance()
-		link.resize(segment_length)
-		link.position = start_position + segment_vector * segment_num
-		link.rotate(segment_vector.angle() - PI/2)
-
-		add_child(link)
-		nodes_to_clean_up.append(link)
-
-		link.pin.set_node_b(pin_previous.get_path())
-
-		pin_previous = link.body
-
-	var last_pin = PinJoint2D.new()
-
-	add_child(last_pin)
-	nodes_to_clean_up.append(last_pin)
-
-	last_pin.position = body_a.position
-	last_pin.set_node_a(body_a.get_path())
-	last_pin.set_node_b(pin_previous.get_path())
-
-	#get_tree().paused = true
-
+			var pull_strength = abs(linear_velocity_impulse_factor * distance_from_ideal_impulse_factor)
+			rope_body_start.apply_central_impulse(pull_vector.normalized() * pull_strength)
 
 func detach():
 	for node in nodes_to_clean_up:
@@ -62,3 +39,5 @@ func _draw():
 		var a = rope_body_start.global_position
 		var b = rope_end
 		draw_line(a, b, Color(1.0, 1.0, 1.0))
+
+		draw_circle(rope_end, grapple_distance, Color(1.0, 1.0, 1.0, 0.1))
