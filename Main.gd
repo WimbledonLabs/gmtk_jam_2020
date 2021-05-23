@@ -25,6 +25,13 @@ func _input(event):
 		elif event.button_index == BUTTON_LEFT and not event.pressed:
 			mouse_down = false
 
+	if event is InputEventScreenTouch:
+		event = event as InputEventScreenTouch
+		if event.pressed:
+			attempt_grapple()
+		else:
+			release_grapple()
+
 	if event.is_action_pressed("grapple"):
 		attempt_grapple()
 
@@ -49,9 +56,13 @@ func attempt_grapple():
 
 
 func release_grapple():
+	# Always detach the rope
 	assert(rope)
 	rope.detach()
-	$release_sound.play()
+
+	# Only play this if we're absolutely sure we were grappling
+	if grappling:
+		$release_sound.play()
 
 	grappling = false
 
@@ -102,6 +113,7 @@ func death_animation_finished():
 	queue_free()
 
 func _process(delta):
+	# Queues redraw (for some reason)
 	update()
 
 func _draw():
