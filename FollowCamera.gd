@@ -19,7 +19,6 @@ func update_target():
 		target = null
 		var players = get_tree().get_nodes_in_group("player")
 		if players:
-			print("new target for camera")
 			target = players[0]
 			target_last_position = target.position
 		else:
@@ -32,7 +31,6 @@ func _process(delta):
 func update_position():
 	update_target()
 	if target:
-		print("updating position", x_follow, y_follow)
 		var target_frame_velocity = (target.position - target_last_position) * velocity_leading_factor
 
 		if x_follow:
